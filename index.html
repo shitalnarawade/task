@@ -23,19 +23,11 @@
   </body>
   <script >
       
-      let mainheading =document.getElementById('main-heading');
-     let header = document.getElementById('header');
-     let basketheading = document.getElementById('basket-heading');
-     let thanks = document.getElementById('thanks');
-
-     mainheading.textContent='Fruit World';
-     mainheading.style.background='green';
-     mainheading.style.color='orange';
-     header.style.background='green';
-     header.style.borderBottom='orange';
-     basketheading.style.color='green';
-     thanks.textContent="Please visit us again"; 
-     thanks.innerHTML = '<p>Please visit us again</p>'
+    let item =document.getElementsByClassName('fruit');
+     item[2].style.background= 'yellow';
+       for(let i=0; i<item.length; i++){
+        item[i].style.fontWeight='bold';
+     }
 
      
      
